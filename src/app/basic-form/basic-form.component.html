@@ -1,0 +1,9 @@
+<form #detailsForm="ngForm" (ngSubmit)="onSubmit(detailsForm.value)" >
+    <input ngModel name="fullName" type="text" placeholder="Eneter Name">
+    <input  ngModel name="password" type="password" placeholder="Eneter Password">
+    <input ngModel name="email" type="email" placeholder="Eneter Email">
+    <button>Sumbit Buttopn</button>
+</form>
+<li>{{data1.name}}</li>
+<li>{{data1.email}}</li>
+<li>{{data1.password}}</li>

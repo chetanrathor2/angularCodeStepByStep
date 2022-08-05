@@ -1,0 +1,49 @@
+<button (click)="OnClick('dec')">Decremenmt (--)</button> <br> <br>
+<button (click)="OnClick('inc')">Decremenmt (++)</button>
+{{counter}}
+
+
+<p>
+
+</p>
+<input type="text" value="{{name}}" disabled="{{disable}}" >
+<br>
+<br>
+<input type="text" [value]="name" [class]="name" [disabled]="disable">
+
+<div *ngIf="check">
+    hello siya
+</div>
+
+<div *ngIf="!check">
+    hello jiya
+</div>
+
+
+<div *ngIf=" color=== 'red' ">
+    hello {{color}}
+</div>
+<div *ngIf="color=== 'blue' ">
+    hello {{color}}
+</div>
+<div *ngIf="color=== 'green' ">
+    hello {{color}}
+</div>]
+
+<br>
+<br>
+<br>
+<div *ngFor="let fr of fruits">
+{{fr}}
+</div>
+
+
+
+<br>
+<br><br>
+<ul *ngFor="let onePerson of persons">
+<li>{{onePerson.firstName}}</li>
+<li>{{onePerson.secondName}}</li>
+<li>{{onePerson.age}}</li>
+</ul>
+
