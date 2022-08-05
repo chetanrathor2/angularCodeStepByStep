@@ -1,0 +1,13 @@
+forms in angular 
+api call
+
+forms in angular 
+    1 template driven forms
+        mostly work done in template or html
+
+
+    2 reactive form 
+         whole the handelink done in ts file 
+
+data flow 
+template(html) -> class(ts) -> services(api) -> databse(backend)

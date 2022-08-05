@@ -1,0 +1,48 @@
+<p>template-driven works!</p>
+<!-- form : video 1 -->
+<!-- basic Form -->
+<!-- <form #loginForm="ngForm" (ngSubmit)="onUserLogin(loginForm.value)">
+    <br>
+    <input type="text" name="userName" placeholder="Enter Name" ngModel>
+    <br><br>
+    <input type="password" name="userPassword" placeholder="Enter password" ngModel>
+    <br><br>
+    <button>Submit</button>
+    <br>
+</form> -->
+<br> <br> <br>
+
+<!-- form : video 1 -->
+
+
+
+<!-- form : video 2 -->
+<!-- template Driven form -->
+<!-- <form #loginForm="ngForm" (ngSubmit)="onUserLogin(loginForm.value)">
+    <br>
+    <input type="text" name="userName" placeholder="Enter Name" ngModel>
+    <br><br>
+    <input type="password" name="userPassword" placeholder="Enter password" ngModel>
+    <br><br>
+    <button>Submit</button>
+    <br>
+</form> -->
+
+<!-- form : video 2 -->
+
+
+<!-- form : video 3 -->
+<!-- template Driven form  ( with validation f)-->
+<form [formGroup]="loginForm" (ngSubmit)="onUserLogin(loginForm)">
+    <br>
+    <input type="text" name="userName" placeholder="Enter Name" formControlName="user">
+    <br><br>
+    <span *ngIf="user && user.invalid && user.touched">Invalid </span>
+    <input type="password" name="userPassword" placeholder="Enter password" formControlName="password" >
+    <br><br>
+    <span *ngIf="password && password.invalid && password.touched">Invalid </span>
+    <button>Submit</button>
+    <br>
+</form>
+
+<!-- form : video 3 -->
